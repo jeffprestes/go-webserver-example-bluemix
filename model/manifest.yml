@@ -1,11 +1,11 @@
 applications:
 - path: .
-  random-route: true
-  memory: 128M
-  instances: 1
-  domain: mybluemix.net
-  name: Go Webserver Example Bluemix
-  host: gowebserverexamplebluemix
-  disk_quota: 1024M
-  command: go-webserver-example-bluemix
-  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+random-route: true
+memory: 128M
+instances: 1
+domain: mybluemix.net
+name: Go Webserver Example Bluemix
+host: gowebserverexamplebluemix
+disk_quota: 1024M
+command: go-webserver-example-bluemix
+buildpack: https://github.com/cloudfoundry/go-buildpack.git
