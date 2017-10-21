@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"os"
 
-	"github.com/jeffprestes/go-webserver-example/manipulador"
+	"github.com/jeffprestes/go-webserver-example-bluemix/manipulador"
 )
 
 func main() {
@@ -15,5 +16,9 @@ func main() {
 	http.HandleFunc("/funcao", manipulador.Funcao)
 	http.HandleFunc("/ola", manipulador.Ola)
 	fmt.Println("Estou escutando, comandante...")
-	http.ListenAndServe(":8181", nil)
+	port := os.Getenv("VCAP_APP_PORT")
+	if port == "" {
+		port = "8080"
+	}
+	http.ListenAndServe(":"+port, nil)
 }
