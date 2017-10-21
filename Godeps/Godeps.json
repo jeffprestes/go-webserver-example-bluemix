@@ -1,6 +1,6 @@
 {
 	"ImportPath": "github.com/jeffprestes/go-webserver-example-bluemix",
-	"GoVersion": "go1.9",
+	"GoVersion": "go1.7.5",
 	"GodepVersion": "v79",
 	"Deps": []
 }
