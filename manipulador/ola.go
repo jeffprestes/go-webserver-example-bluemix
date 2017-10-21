@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/jeffprestes/cursodego/servidor_web/model"
+	"github.com/jeffprestes/go-webserver-example/model"
 )
 
 //Modelos armazena os modelos de pagina que serão executados pelos manipuladores

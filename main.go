@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/jeffprestes/cursodego/servidor_web/manipulador"
+	"github.com/jeffprestes/go-webserver-example/manipulador"
 )
 
 func main() {
